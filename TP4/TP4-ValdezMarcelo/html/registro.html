@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <a href="../index.html">
+          <img src="../img/logo1.png" alt="Web Peliculas" />
+        </a>
+      </figure>
+      <h1>Movie Club</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"> Inicio </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="sectionPrincipal">
+      <main >
+      
+          <article>
+            <form  action="envio.php" method="post">
+              <fieldset class="form-registrar">
+                <legend>Formulario de Registro</legend>
+                <label for="lbl-name">Apellido y Nombre</label>
+                <input
+                  id="lbl-name"
+                  type="text"
+                  placeholder="Apellido y nombres"
+                  required
+                />
+                <label for="lbl-email">direcion de e-mail</label>
+                <input
+                  id="lbl-email"
+                  type="email"
+                  placeholder="correo electrónico"
+                  required
+                />
+                <label for="lbl-password">Contraseña</label>
+                <input
+                  id="lbl-password"
+                  type="password"
+                  placeholder="contraseña"
+                  required
+                />
+                <label for="lbl-date">Fecha de Nacimiento</label>
+                <input type="date" name="" id="lbl-date" />
+                <label for="lbl-country">País</label>
+                <input
+                  id="lbl-country"
+                  type="text"
+                  placeholder="País de residencia"
+                  required
+                />
+                <label for="lbl-nationality"> Nacionalidad </label>
+                <select name="" id="lbl-nationality">
+                  <optgroup label="Elija un pais de la lista">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                  </optgroup>
+                </select>
+
+                <p>Deseas recibir promociones y novedades?</p>
+
+                <div>
+                  <input type="radio" name="pregunta" id="idSi" /><label
+                    for="idSi"
+                    >si</label
+                  >
+                  <input type="radio" name="pregunta" id="idNo" /><label
+                    for="idNo"
+                    >no</label
+                  >
+                </div>
+
+                <input class="btn-registrar" type="submit" value="Registrar" />
+              </fieldset>
+            </form>
+          </article>
+        
+      </main>
+      <aside>
+        <form action="">
+          <fieldset class="form-consulta">
+            <legend>
+              <p>¿Algún inconveniente?</p> 
+               Contáctanos</legend>
+            <label for="asideMail">correo electrónico</label> 
+            <input type="email" name="" id="asideMail">
+            <label for="asideAsunto">Asunto</label>
+            <input type="text" name="" id="asideAsunto">
+            <label for="commentaryBox">Dejanos aqui tu inquietud</label>
+            <textarea name="" id="commentaryBox" cols="30" rows="10" >
+
+            </textarea>
+            <input class="btn-registrar" type="submit" value="Enviar">
+            
+          </fieldset>
+        </form>
+      </aside>
+    </section>
+
+    <footer>
+      <ul>
+        <li>Universidad Nacional de Tucumán</li>
+        <li>Facultad de Ciencias Exáctas y Tecnología</li>
+        <li>Carrera: Programador Universitario</li>
+      </ul>
+      <ul>
+        <li><p>© copyright Valdez, Marcelo Sebastián</p></li>
+        <li>
+          <a href="mailto: marcelosebastianvaldez@gmail.com"
+            >marcelosebastianvaldez@gmail.com</a
+          >
+        </li>
+        <li>+5493814639721</li>
+      </ul>
+    </footer>
+  </body>
+</html>

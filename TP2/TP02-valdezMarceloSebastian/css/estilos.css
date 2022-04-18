@@ -1,0 +1,159 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+/* Estilos Header */
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 11em 0;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  align-items: center;
+}
+
+header figure {
+  width: 6em;
+}
+
+header figure img {
+  width: 100%;
+}
+
+/* Estilos NAV */
+nav {
+  background-color: rgb(129, 125, 125);
+  padding: 1.2em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin-left: 2rem;
+  list-style: none;
+}
+nav ul li a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem;
+}
+nav a:hover,
+nav a:focus {
+  background-color: rgb(144, 131, 122);
+}
+h1 {
+  font-size: 3rem;
+  color: rgb(197, 215, 221);
+  text-shadow: 6px 6px 6px black;
+}
+
+/* section */
+section {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: stretch;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #262626;
+  color: white;
+  padding: 1em;
+}
+
+aside img {
+  width: 100%;
+}
+aside p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  width: 70%;
+  padding: 1em;
+}
+main {
+  background-color: rgb(206, 201, 201);
+  /* width: 70%; */
+  padding: 2em;
+}
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* clase con estilos propios */
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1.2em;
+  padding: 0.2em;
+}
+.card figure {
+  width: 30%;
+}
+.card img {
+  width: 100%;
+}
+.card p {
+  width: 70%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(129, 125, 125);
+  padding: 1.2em;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+
+}
+footer a{
+    text-decoration: none;
+    color: rgb(29, 23, 78);
+}
+footer p{
+    margin-bottom: .3em;
+}
+
+
+/* Estilos de la galeria */
+
+main section article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+main article figure{
+    width: 23%;
+    margin: .7rem;
+}
+main article figure img{
+    width: 100%;
+
+}
+figcaption{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

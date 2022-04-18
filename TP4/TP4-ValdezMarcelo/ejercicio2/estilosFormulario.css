@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0%;
+  border: 0;
+}
+
+header {
+  background-color: rgb(221, 121, 121);
+  padding: 2rem 0;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 12rem;
+
+  background-color: rgb(77, 161, 188);
+  border: 0.3rem solid rgb(77, 161, 188);
+}
+h2 {
+  padding: 1rem;
+  text-align: center;
+}
+article {
+  background-color: white;
+  padding-bottom: 0.7rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: start;
+}
+form fieldset {
+  margin: auto;
+  width: 98%;
+  color: whitesmoke;
+  padding: 0.3rem;
+
+  margin-top: 1rem;
+}
+form legend {
+  margin: auto;
+
+  padding: 0.3rem;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.2rem 0.6rem;
+}
+
+#bg-rojo,
+#bg-rojo legend {
+  background-color: red;
+}
+#bg-marron,
+#bg-marron legend {
+  background-color: rgb(232, 202, 34);
+  display: flex;
+  flex-direction: column;
+}
+#bg-verde,
+#bg-verde legend {
+  background-color: green;
+}
+.legendClass {
+  margin-left: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.buttons input {
+  margin-right: 0.7rem;
+  background-color: blue;
+  color: whitesmoke;
+  padding: 1rem;
+  cursor: pointer;
+}

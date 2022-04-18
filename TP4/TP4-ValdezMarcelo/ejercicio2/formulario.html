@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilosFormulario.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="#formulario">Ejercicio Encuesta</a>
+      </h1>
+    </header>
+
+    <main>
+      <h2>Encuesta</h2>
+      <article>
+        <form id="formulario" action="encuensta.php" method="post">
+          <fieldset id="bg-rojo">
+            <legend class="bg-rojo">Datos Personales</legend>
+
+            <label for="lbl-name"
+              >Nombre:
+              <input type="text" name="" id="lbl-name" placeholder="Ingrese su nombre" maxlength="50" required />
+            </label>
+            <label for="lbl-email"
+              >Mail:
+              <input type="email" name="" id="lbl-email" placeholder="" required />
+            </label>
+            <label for="lbl-date">
+              Fecha de nacimiento:
+
+              <input type="date" name="" id="lbl-date" value="2000-01-01" />
+            </label>
+            <label for="lbl-cel">
+              Celular(con codigo de area, sin 0 ni 15):
+
+              <input type="text" id="lbl-cel" maxlength="10" />
+            </label>
+          </fieldset>
+
+          <fieldset id="bg-marron">
+            <legend class="bg-marron">Sobre la carrera</legend>
+
+            <label for="lbl-carrera"
+              >Indique la carrera en la que se inscribió
+              <select name="" id="lbl-carrera">
+                <option value="">Elija una carrera</option>
+                <option value="Programador Universitario">
+                  Programador Universitario
+                </option>
+                <option value="Licenciatura en Informática">
+                  Licenciatura en Informática
+                </option>
+                <option value="Ingeniería en Informática">
+                  Ingeniería en Informática
+                </option>
+              </select>
+            </label>
+            <legend class="legendClass">Recursa la materia?:</legend>
+            <label for="lbl-si">
+              <input type="radio" name="opcion" id="lbl-si" />si
+            </label>
+            <label for="lbl-no">
+              <input type="radio" name="opcion" id="lbl-materia" checked />no
+            </label>
+
+            <legend class="legendClass" > Materias que cursa: </legend class="legendClass">
+            <label for="algebra">
+              <input type="checkbox" name="algebra" id="algebra" />Algebra
+            </label>
+            <label for="calculo">
+              <input type="checkbox" name="calculo" id="calculo" />Cálculo I
+            </label>
+            <label for="laboratorio">
+              <input
+                type="checkbox"
+                name="laboratorio"
+                id="laboratorio"
+                checked
+              />Laboratorio
+            </label>
+            <label for="logica">
+              <input type="checkbox" name="logica" id="logica" /> Elementos de
+              computacion y Lógica
+            </label>
+            <label for="otros">
+              <input type="checkbox" name="otros" id="otros" /> Otros
+            </label>
+          </fieldset>
+
+          <fieldset id="bg-verde">
+            <legend class="bg-rojo">Sobre la Matéria</legend>
+            <legend class="legendClass">
+              Indique el horario de la comisión práctica a la que asiste
+            </legend>
+
+            <label for="diaPractica">
+              Día
+              <select name="" id="diaPractica">
+                <option value="">Elija el día</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+              </select>
+            </label>
+
+            <label for="hora">
+              Hora <input type="time" name="" id="hora" />
+            </label>
+
+            <label for="satisfac">
+              Indique el grado de satisfación con respecto a la matéria: (bajo)
+              <input
+                type="range"
+                name=""
+                id="satisfac"
+                min="0"
+                max="100"
+                step="5"
+              />(alto)
+            </label>
+            <label for="calific">
+              Del 1 al 10, como calificaria el dictadode la materia?
+              <input
+                type="number"
+                name=""
+                id="calific"
+                min="1"
+                max="10"
+                required
+              />
+            </label>
+          </fieldset>
+          <section class="buttons">
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpiar" />
+          </section>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
